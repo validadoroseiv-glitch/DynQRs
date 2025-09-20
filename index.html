@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Página en Blanco</title>
+  <title>OSEIV</title>
 </head>
 <body>
  <SCRIPT>
    const as_url_base = "https://script.google.com/macros/s/AKfycbyoy7Ds0aK1YyqcEi7oJyp2qsfNt2WGzp5pVQ4iwdYfytPEH6a9SsaNA_tpmrmJv_HJUA/exec";
 
    var url = docuement.location.href;
-   var k = urlsubstr(url.lastIndexOf("k=")+2);
+   var k = url.substr(url.lastIndexOf("k=")+2);
 
    if(k){
      fetch(AS_URL_BASE+´?K=´+K)
