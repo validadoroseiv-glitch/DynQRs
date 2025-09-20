@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página en Blanco</title>
+</head>
+<body>
+ <SCRIPT>
+   const as_url_base = "";
+
+   var url = docuement.location.href;
+   var k = urlsubstr(url.lastIndexOf("k=")+2);
+
+   if(k){
+     fetch(AS_URL_BASE+´?K=´+K)
+       .them(r => r.text())
+       .them((r) => ¨{
+             console.log(r);
+             //document.write(r);
+         IF(r){
+           document.location.replace(r);
+         }
+     })
+      .catch(err => console.log(err))
+   }
+
+   
+ </SCRIPT>
+  
+</body>
+</html>
